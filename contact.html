@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"><b>HOME</b></a></li>
+                <li><a href="lyrics.html"><b>My favorite song</b></a></li>
+                <li><a href="movie.html">My favorite movie</b></a></li>
+                <li><a href="about.html">About me</b></a></li>
+                <li><a href="contact.html">Contact me</b></a></li>
+                <li><a href="weekend.html"><b>Weekend plan</b></a></li>
+            </ul>
+        </nav>
+    <h1><i>If you have any questions or other concerns, please contact me!</i></h1>
+    </header>
+    <hr>
+    <main>
+        <p style="font-size: 2.2em"><strong>Registration form</strong></p>
+        <form action="">
+            <label for="firstname" >First Name:</label>
+            <input type="text" name ="firstname" id="firstname" placeholder ="John" /><br><br>
+            <label for ="lastname">Lastname:</label>
+            <input type= "text" name="lastname" id ="lastname" placeholder="Doe" /><br><br>
+            <label  for="course">Course: </label>
+            <select id="course" name ="course">
+                <option value="Javascript">Javascript</option>
+                <option value="HTML" selected >HTML</option>
+                <option value="C#L">C# </option>
+            </select>
+            <br>
+            <p> Gender:</p>
+            <input type="radio" name ="gender" value="Male"  checked /> Male<br>
+            <input type ="radio" name="gender"  value="Female" />Female <br>
+            <input type="radio"  name="gender" value= "other" />Other<br>
+            <br>
+            <p>Hobbies:</p>
+            <input type="checkbox" name ="Hobbies" value="Programming" checked/>Programming<br>
+            <input type="checkbox" name ="Hobbies" value="Basketball" checked/>Basketball<br>
+            <input type="checkbox" name ="Hobbies" value="Football" />Football<br>
+            <input type="checkbox" name ="Hobbies" value="Reading Novel" />Reading Novel<br>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder ="004312345678912" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            <br>
+            <br>
+            <label  for="message" >Address:</label><br>
+            <textarea  id="message"  name="message" rows= "5" cols ="50" 
+                 placeholder="Schützenstrasse 30, 1210 Vienna Austria"></textarea>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder = "johndoe@example.com" pattern=".+@example\.com" size="30" required />
+            <br>
+            <br>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" minlength="8" required />
+            <br>
+            <br>
+            <input  type= "submit"  value= "Submit" />
+            <input  type= "reset"  value= "Reset" />
+         </form>
+    <hr>
+
+    </main> 
+    <footer>
+        Copyright &copy Edith Peschke
+    </footer>  
+</body>
+</body>
+</html>
